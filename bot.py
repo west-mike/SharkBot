@@ -2,7 +2,7 @@ import discord
 import pyshark
 from discord.ext import commands
 #Bot Token
-TOKEN = 'NTc1NzcxNDc0NjY1Nzk5NzA5.XNXJag.XdFLK81EUpGvg8ZZCCRKCpBFRZw'
+TOKEN = 'token'
 #Create a Bot
 prefix = "?"
 bot = commands.Bot(command_prefix=prefix)
@@ -31,4 +31,4 @@ def process_commands(message):
 			await (read(params))
 		elif (func == 'ping'):
 			await (ping())
-bot.run('NTc1NzcxNDc0NjY1Nzk5NzA5.XNXJag.XdFLK81EUpGvg8ZZCCRKCpBFRZw')
+bot.run(TOKEN)
